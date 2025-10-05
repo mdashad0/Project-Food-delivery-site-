@@ -148,6 +148,59 @@ JWT_SECRET=your_jwt_secret_key
 PORT=4000
 ```
 
+## Deployment
+
+### Deploy to Render
+
+This project is configured for easy deployment to Render.com:
+
+#### Option 1: Static Site + Web Service (Recommended)
+
+1. **Deploy Frontend (Static Site)**:
+   - Connect your GitHub repository to Render
+   - Create a new Static Site
+   - Set build command: `cd frontend && npm install && npm run build`
+   - Set publish directory: `frontend/dist`
+
+2. **Deploy Backend (Web Service)**:
+   - Create a new Web Service
+   - Set build command: `cd backend && npm install`
+   - Set start command: `cd backend && npm start`
+   - Add environment variables in Render dashboard
+
+#### Option 2: Single Web Service
+
+1. Connect repository to Render
+2. Use build command: `npm run build`
+3. Use start command: `npm start`
+4. Set environment variables in Render dashboard
+
+#### Environment Variables for Production
+
+Set these in your Render dashboard:
+
+```
+MONGO_URI=your_mongodb_atlas_connection_string
+STRIPE_SECRET_KEY=your_stripe_secret_key
+JWT_SECRET=your_jwt_secret_key
+NODE_ENV=production
+PORT=10000
+```
+
+### Deploy with Docker
+
+```bash
+# Build the image
+docker build -t food-delivery-app .
+
+# Run the container
+docker run -p 4000:4000 \
+  -e MONGO_URI=your_mongodb_uri \
+  -e STRIPE_SECRET_KEY=your_stripe_key \
+  -e JWT_SECRET=your_jwt_secret \
+  food-delivery-app
+```
+
 ## Contributing
 
 1. Fork the repository
