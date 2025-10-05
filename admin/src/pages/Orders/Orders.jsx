@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Orders.css"
 import axios from 'axios'
 import { toast } from 'react-toastify'
 import { assets } from '../../assets/assets'
 
 const Orders = ({ url }) => {
-  
+
   const [orders, setOrders] = useState([]);
 
   const fetchAllOrders = async () => {
@@ -31,7 +31,7 @@ const Orders = ({ url }) => {
       });
       if (response.data.success) {
         await fetchAllOrders();
-        toast.success("Order status updated");
+        toast.success("Status updated successfully");
       } else {
         toast.error("Error updating status");
       }
@@ -43,10 +43,10 @@ const Orders = ({ url }) => {
 
   useEffect(() => {
     fetchAllOrders();
-  }, [])
+  }, []);
 
   return (
-    <div className='order add'>
+    <div className='orders add'>
       <h3>Order Page</h3>
       <div className="order-list">
         {orders.map((order, index) => (
@@ -62,9 +62,7 @@ const Orders = ({ url }) => {
                   }
                 })}
               </p>
-              <p className='order-item-name'>
-                {order.address.firstName + " " + order.address.lastName}
-              </p>
+              <p className='order-item-name'>{order.address.firstName + " " + order.address.lastName}</p>
               <div className='order-item-address'>
                 <p>{order.address.street + ","}</p>
                 <p>{order.address.city + ", " + order.address.state + ", " + order.address.country + ", " + order.address.zipcode}</p>
