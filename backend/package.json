@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "main": "server.js",
   "type": "module",
-  "scripts": {
-    "server":"nodemon server.js"
-  },
+  "description": "Backend for Food Delivery Project",
   "author": "",
   "license": "ISC",
-  "description": "",
+  "scripts": {
+    "dev": "nodemon server.js",   // for local development
+    "server": "node server.js"    // for production (Render)
+  },
   "dependencies": {
     "bcrypt": "^6.0.0",
     "body-parser": "^2.2.0",
@@ -18,8 +19,11 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.18.3",
     "multer": "^2.0.2",
-    "nodemon": "^3.1.10",
     "stripe": "^19.0.0",
     "validator": "^13.15.15"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
+
