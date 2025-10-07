@@ -14,7 +14,6 @@ A full-stack food delivery application built with React.js, Node.js, Express.js,
 - **File Upload**: Image upload for food items
 
 ## Project Structure
-
 ```
 food-del/
 ├── frontend/          # React.js frontend application
@@ -22,6 +21,10 @@ food-del/
 ├── admin/            # Admin panel for order management
 └── README.md
 ```
+
+## Project Preview..
+![Screenshot 2025-05-01 113229](https://i.ibb.co/fdNkXp8Z/Screenshot-2025-10-06-180530.png)
+
 
 ## Setup Instructions
 
