@@ -1,7 +1,78 @@
-# Food Delivery ApplicationWork in Process
-
+# Food Delivery Application
 
 A full-stack food delivery application built with React.js, Node.js, Express.js, and MongoDB.
+
+## 📱 Application Screenshots
+
+### 🏠 Homepage
+<div align="center">
+<img src="screenshots/homepage.png" alt="Homepage" width="800"/>
+</div>
+
+*Order your favourite food with an attractive hero section and easy navigation*
+
+### 🍽️ Menu & Food Categories
+<div align="center">
+<img src="screenshots/menu-categories.png" alt="Menu Categories" width="800"/>
+</div>
+
+*Explore our diverse menu featuring 8 different food categories: Salad, Rolls, Deserts, Sandwich, Cake, Pure Veg, Pasta, and Noodles*
+
+### 🌟 Top Dishes
+<div align="center">
+<img src="screenshots/top-dishes.png" alt="Top Dishes" width="800"/>
+</div>
+
+*Discover top dishes near you with star ratings, descriptions, and competitive pricing*
+
+### 🛒 Shopping Cart
+<div align="center">
+<img src="screenshots/cart.png" alt="Shopping Cart" width="800"/>
+</div>
+
+*Manage your order with detailed cart view showing items, quantities, pricing, and promo code support*
+
+### 📱 Mobile App Section
+<div align="center">
+<img src="screenshots/app-download.png" alt="App Download" width="800"/>
+</div>
+
+*Download our mobile app from Google Play Store and App Store for a better experience*
+
+### 📞 Footer & Contact
+<div align="center">
+<img src="screenshots/footer.png" alt="Footer" width="800"/>
+</div>
+
+*Complete footer with company information, navigation links, and contact details*
+
+## ✨ Key Features Showcased
+
+### 🎨 Modern UI/UX Design
+- Clean and intuitive interface with orange/red color scheme
+- Responsive design that works on all devices
+- Professional food photography and appealing layouts
+
+### 🍕 Comprehensive Menu System
+- **8 Food Categories**: Salad, Rolls, Desserts, Sandwich, Cake, Pure Veg, Pasta, Noodles
+- **Detailed Food Items**: Each dish includes rating, description, and pricing
+- **Visual Appeal**: High-quality food images for every item
+
+### 🛍️ Smart Shopping Cart
+- Real-time cart updates with quantity management
+- Subtotal, delivery fee, and total calculations
+- Promo code support for discounts
+- Easy item removal and modification
+
+### 📱 Mobile App Integration
+- Cross-platform availability (iOS & Android)
+- Seamless app store integration
+- Consistent branding across web and mobile
+
+### 🏢 Professional Branding
+- "Tomato" brand identity with consistent styling
+- Complete contact information and social media links
+- Professional footer with company details and policies
 
 ## Features
 

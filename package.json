@@ -1,21 +1,24 @@
 {
-  "name": "food-delivery-app",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "A full-stack food delivery application",
-  "main": "backend/server.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "build": "cd frontend && npm install --include=dev && npx vite build",
-    "start": "cd backend && npm start",
-    "install-all": "cd backend && npm install && cd ../frontend && npm install && cd ../admin && npm install",
-    "dev-backend": "cd backend && npm run server",
-    "dev-frontend": "cd frontend && npm run dev",
-    "dev-admin": "cd admin && npm run dev"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
-  "keywords": ["food-delivery", "react", "nodejs", "express", "mongodb"],
-  "author": "mdashad0",
-  "license": "MIT",
-  "engines": {
-    "node": ">=16.0.0"
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "bcrypt": "^6.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "stripe": "^19.0.0",
+    "multer": "^2.0.2",
+    "validator": "^13.15.15"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
