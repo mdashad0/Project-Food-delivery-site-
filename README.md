@@ -6,44 +6,38 @@ A full-stack food delivery application built with React.js, Node.js, Express.js,
 
 ### 🏠 Homepage
 <div align="center">
-<img src="screenshots/homepage.png" alt="Homepage" width="800"/>
+<img src="https://image2url.com/images/1760192057831-02f3a3eb-39a9-43f5-9d88-62f30899e82e.png" alt="Homepage" width="800"/>
 </div>
 
 *Order your favourite food with an attractive hero section and easy navigation*
 
 ### 🍽️ Menu & Food Categories
 <div align="center">
-<img src="screenshots/menu-categories.png" alt="Menu Categories" width="800"/>
+<img src="https://image2url.com/images/1760192128100-499c7cf4-b047-4948-97af-a8224b5ff9dd.png" alt="Menu Categories" width="800"/>
 </div>
 
 *Explore our diverse menu featuring 8 different food categories: Salad, Rolls, Deserts, Sandwich, Cake, Pure Veg, Pasta, and Noodles*
 
 ### 🌟 Top Dishes
 <div align="center">
-<img src="screenshots/top-dishes.png" alt="Top Dishes" width="800"/>
+<img src="https://image2url.com/images/1760192210046-07d03807-9d7e-491f-907b-edf4d8b6e427.png" alt="Top Dishes" width="800"/>
 </div>
 
 *Discover top dishes near you with star ratings, descriptions, and competitive pricing*
 
 ### 🛒 Shopping Cart
 <div align="center">
-<img src="screenshots/cart.png" alt="Shopping Cart" width="800"/>
+<img src="https://image2url.com/images/1760192273553-37d58d7a-2066-4c36-bd93-c9fc67288055.png" alt="Shopping Cart" width="800"/>
 </div>
 
 *Manage your order with detailed cart view showing items, quantities, pricing, and promo code support*
 
-### 📱 Mobile App Section
+### 📱 Mobile App Section & 📞 Footer & Contact
 <div align="center">
-<img src="screenshots/app-download.png" alt="App Download" width="800"/>
+<img src="https://image2url.com/images/1760192319148-1e7703bc-78f0-4c18-9d13-d8b5171bb112.png" alt="App Download" width="800"/>
 </div>
 
 *Download our mobile app from Google Play Store and App Store for a better experience*
-
-### 📞 Footer & Contact
-<div align="center">
-<img src="screenshots/footer.png" alt="Footer" width="800"/>
-</div>
-
 *Complete footer with company information, navigation links, and contact details*
 
 ## ✨ Key Features Showcased
