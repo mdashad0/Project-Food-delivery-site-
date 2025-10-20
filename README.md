@@ -274,10 +274,4 @@ docker run -p 4000:4000 \
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
 
-This project is licensed under the MIT License.
-
-## Support
-
-For support, email support@fooddelivery.com or join our Slack channel.
