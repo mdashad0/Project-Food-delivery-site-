@@ -1,6 +1,6 @@
 # Food Delivery Application
 
-A full-stack food delivery application built with React.js, Node.js, Express.js, and MongoDB.
+A full-stack food delivery application built with React.js, Node.js, Express.js, and MongoDB..
 
 ## 📱 Application Screenshots
 
