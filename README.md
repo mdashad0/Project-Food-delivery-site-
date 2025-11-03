@@ -47,7 +47,7 @@ A full-stack food delivery application built with React.js, Node.js, Express.js,
 - Responsive design that works on all devices
 - Professional food photography and appealing layouts
 
-### 🍕 Comprehensive Menu System
+### 🍕 Comprehensive Menu System.
 - **8 Food Categories**: Salad, Rolls, Desserts, Sandwich, Cake, Pure Veg, Pasta, Noodles
 - **Detailed Food Items**: Each dish includes rating, description, and pricing
 - **Visual Appeal**: High-quality food images for every item
