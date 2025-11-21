@@ -22,7 +22,7 @@ const addFood = async (req, res) => {
         res.json({ success: false, message: "Error" })
     };
 
-}
+};
 
 // all food list
 const listFood = async (req, res) => {
