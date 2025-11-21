@@ -20,7 +20,7 @@ const addFood = async (req, res) => {
     } catch (error) {
         console.log(reeor)
         res.json({ success: false, message: "Error" })
-    }
+    };
 
 }
 
