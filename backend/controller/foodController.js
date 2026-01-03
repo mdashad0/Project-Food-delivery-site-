@@ -20,7 +20,6 @@ const addFood = async (req, res) => {
         console.log(reeor)
         res.json({ success: false, message: "Error" })
     };
-
 };
 
 // all food list
