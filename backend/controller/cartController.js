@@ -47,6 +47,5 @@ const getCart = async(req,res) =>{
         console.log(error);
         res.json({success:false,message:"Error"})
     }
-}
-
+};
 export {addToCart,removeFromCart,getCart}
