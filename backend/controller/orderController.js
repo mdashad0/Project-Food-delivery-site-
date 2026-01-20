@@ -58,10 +58,6 @@ const placeOrder = async (req,res)=>{
         // If Stripe fails, still save the order but return a test URL
         // if (error.type === 'StripeInvalidRequestError') {
         //     res.json({
-        //         success:true,
-        //         session_url:`${frontend_url}/verify?success=true&orderId=${newOrder._id}&test=true`,
-        //         message:"Order placed successfully (Stripe test mode)"
-        //     })
     }
 }
 const verifyOrder = async(req,res)=>{
