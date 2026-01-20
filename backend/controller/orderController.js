@@ -55,9 +55,6 @@ const placeOrder = async (req,res)=>{
         console.log(error);
         res.json({success:false,message:"Error"})
         
-        // If Stripe fails, still save the order but return a test URL
-        // if (error.type === 'StripeInvalidRequestError') {
-        //     res.json({
     }
 }
 const verifyOrder = async(req,res)=>{
