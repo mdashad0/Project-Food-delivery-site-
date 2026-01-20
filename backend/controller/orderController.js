@@ -62,9 +62,6 @@ const placeOrder = async (req,res)=>{
         //         session_url:`${frontend_url}/verify?success=true&orderId=${newOrder._id}&test=true`,
         //         message:"Order placed successfully (Stripe test mode)"
         //     })
-        // } else {
-        //     res.json({success:false,message:error.message || "Error processing order"})
-        // }
     }
 }
 const verifyOrder = async(req,res)=>{
