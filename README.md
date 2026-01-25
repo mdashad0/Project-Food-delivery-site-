@@ -58,7 +58,7 @@ A full-stack food delivery application built with React.js, Node.js, Express.js,
 - Promo code support for discounts
 - Easy item removal and modification
 
-### 📱 Mobile App Integration
+### 📱 Mobile App Integration:
 - Cross-platform availability (iOS & Android)
 - Seamless app store integration
 - Consistent branding across web and mobile
