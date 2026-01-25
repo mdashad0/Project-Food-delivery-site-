@@ -25,7 +25,7 @@ A full-stack food delivery application built with React.js, Node.js, Express.js,
 
 *Discover top dishes near you with star ratings, descriptions, and competitive pricing*
 
-### 🛒 Shopping Cart
+### 🛒 Shopping Cart:
 <div align="center">
 <img src="https://image2url.com/images/1760192273553-37d58d7a-2066-4c36-bd93-c9fc67288055.png" alt="Shopping Cart" width="800"/>
 </div>
