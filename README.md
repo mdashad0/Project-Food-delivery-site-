@@ -40,7 +40,7 @@ A full-stack food delivery application built with React.js, Node.js, Express.js,
 *Download our mobile app from Google Play Store and App Store for a better experience*
 *Complete footer with company information, navigation links, and contact details*
 
-## ✨ Key Features Showcased
+## ✨ Key Features Showcased:
 
 ### 🎨 Modern UI/UX Design
 - Clean and intuitive interface with orange/red color scheme
