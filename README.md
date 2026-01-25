@@ -4,7 +4,7 @@ A full-stack food delivery application built with React.js, Node.js, Express.js,
 
 ## 📱 Application Screenshots:
 
-### 🏠 Homepage
+### 🏠 Homepage:
 <div align="center">
 <img src="https://image2url.com/images/1760192057831-02f3a3eb-39a9-43f5-9d88-62f30899e82e.png" alt="Homepage" width="800"/>
 </div>
