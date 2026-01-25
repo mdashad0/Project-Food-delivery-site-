@@ -18,7 +18,7 @@ A full-stack food delivery application built with React.js, Node.js, Express.js,
 
 *Explore our diverse menu featuring 8 different food categories: Salad, Rolls, Deserts, Sandwich, Cake, Pure Veg, Pasta, and Noodles*
 
-### 🌟 Top Dishes
+### 🌟 Top Dishes:
 <div align="center">
 <img src="https://image2url.com/images/1760192210046-07d03807-9d7e-491f-907b-edf4d8b6e427.png" alt="Top Dishes" width="800"/>
 </div>
