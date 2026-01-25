@@ -52,7 +52,7 @@ A full-stack food delivery application built with React.js, Node.js, Express.js,
 - **Detailed Food Items**: Each dish includes rating, description, and pricing
 - **Visual Appeal**: High-quality food images for every item
 
-### 🛍️ Smart Shopping Cart
+### 🛍️ Smart Shopping Cart:
 - Real-time cart updates with quantity management
 - Subtotal, delivery fee, and total calculations
 - Promo code support for discounts
