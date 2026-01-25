@@ -32,7 +32,7 @@ A full-stack food delivery application built with React.js, Node.js, Express.js,
 
 *Manage your order with detailed cart view showing items, quantities, pricing, and promo code support*
 
-### 📱 Mobile App Section & 📞 Footer & Contact
+### 📱 Mobile App Section & 📞 Footer & Contact:
 <div align="center">
 <img src="https://image2url.com/images/1760192319148-1e7703bc-78f0-4c18-9d13-d8b5171bb112.png" alt="App Download" width="800"/>
 </div>
