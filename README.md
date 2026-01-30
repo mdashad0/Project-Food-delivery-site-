@@ -11,7 +11,7 @@ A full-stack food delivery application built with React.js, Node.js, Express.js,
 
 *Order your favourite food with an attractive hero section and easy navigation*
 
-### 🍽️ Menu & Food Categories:
+### 🍽️ Menu & Food Categories:-
 <div align="center">
 <img src="https://image2url.com/images/1760192128100-499c7cf4-b047-4948-97af-a8224b5ff9dd.png" alt="Menu Categories" width="800"/>
 </div>
