@@ -17,8 +17,7 @@ const addToCart = async(req,res)=>{
     } catch (error) {
         console.log(error);
         res.json({success:false,message:"Error"})
-    }
-
+    };
 }
 
 
@@ -36,7 +35,7 @@ const removeFromCart = async (req,res) =>{
         console.log(error);
         res.json({success:false,message:"Error"})
     }
-}
+};
 
 // fetch user cart data
 const getCart = async(req,res) =>{
@@ -48,6 +47,5 @@ const getCart = async(req,res) =>{
         console.log(error);
         res.json({success:false,message:"Error"})
     }
-}
-
+};
 export {addToCart,removeFromCart,getCart}

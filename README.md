@@ -2,6 +2,72 @@
 
 A full-stack food delivery application built with React.js, Node.js, Express.js, and MongoDB.
 
+## 📱 Application Screenshots:-
+
+### 🏠 Homepage:
+<div align="center">
+<img src="https://image2url.com/images/1760192057831-02f3a3eb-39a9-43f5-9d88-62f30899e82e.png" alt="Homepage" width="800"/>
+</div>
+
+*Order your favourite food with an attractive hero section and easy navigation*
+
+### 🍽️ Menu & Food Categories:-
+<div align="center">
+<img src="https://image2url.com/images/1760192128100-499c7cf4-b047-4948-97af-a8224b5ff9dd.png" alt="Menu Categories" width="800"/>
+</div>
+
+*Explore our diverse menu featuring 8 different food categories: Salad, Rolls, Deserts, Sandwich, Cake, Pure Veg, Pasta, and Noodles*
+
+### 🌟 Top Dishes:
+<div align="center">
+<img src="https://image2url.com/images/1760192210046-07d03807-9d7e-491f-907b-edf4d8b6e427.png" alt="Top Dishes" width="800"/>
+</div>
+
+*Discover top dishes near you with star ratings, descriptions, and competitive pricing*
+
+### 🛒 Shopping Cart:
+<div align="center">
+<img src="https://image2url.com/images/1760192273553-37d58d7a-2066-4c36-bd93-c9fc67288055.png" alt="Shopping Cart" width="800"/>
+</div>
+
+*Manage your order with detailed cart view showing items, quantities, pricing, and promo code support*
+
+### 📱 Mobile App Section & 📞 Footer & Contact:-
+<div align="center">
+<img src="https://image2url.com/images/1760192319148-1e7703bc-78f0-4c18-9d13-d8b5171bb112.png" alt="App Download" width="800"/>
+</div>
+
+*Download our mobile app from Google Play Store and App Store for a better experience*
+*Complete footer with company information, navigation links, and contact details*
+
+## ✨ Key Features Showcased:
+
+### 🎨 Modern UI/UX Design
+- Clean and intuitive interface with orange/red color scheme
+- Responsive design that works on all devices
+- Professional food photography and appealing layouts
+
+### 🍕 Comprehensive Menu System.
+- **8 Food Categories**: Salad, Rolls, Desserts, Sandwich, Cake, Pure Veg, Pasta, Noodles
+- **Detailed Food Items**: Each dish includes rating, description, and pricing
+- **Visual Appeal**: High-quality food images for every item
+
+### 🛍️ Smart Shopping Cart:
+- Real-time cart updates with quantity management
+- Subtotal, delivery fee, and total calculations
+- Promo code support for discounts
+- Easy item removal and modification
+
+### 📱 Mobile App Integration:
+- Cross-platform availability (iOS & Android)
+- Seamless app store integration
+- Consistent branding across web and mobile
+
+### 🏢 Professional Branding
+- "Tomato" brand identity with consistent styling
+- Complete contact information and social media links
+- Professional footer with company details and policies
+
 ## 📱 Application Screenshots
 
 ### 🏠 Homepage
@@ -280,10 +346,4 @@ docker run -p 4000:4000 \
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
 
-This project is licensed under the MIT License.
-
-## Support
-
-For support, email support@fooddelivery.com or join our Slack channel.
