@@ -7,6 +7,7 @@ import { assets } from '../../assets/assets'
 const Orders = ({ url }) => {
 
   const [orders, setOrders] = useState([]);
+  const [confirmedOrder, setConfirmedOrder] = useState(null);
 
   const fetchAllOrders = async () => {
     try {
@@ -24,14 +25,26 @@ const Orders = ({ url }) => {
   }
 
   const statusHandler = async (event, orderId) => {
+    const newStatus = event.target.value;
     try {
       const response = await axios.post(url + "/api/order/status", {
         orderId,
-        status: event.target.value
+        status: newStatus
       });
       if (response.data.success) {
         await fetchAllOrders();
-        toast.success("Status updated successfully");
+        
+        if (newStatus === "Delivered") {
+          setConfirmedOrder(orderId);
+          toast.success("🎉 Order Delivered Successfully!");
+          
+          // Hide confirmation after 3 seconds
+          setTimeout(() => {
+            setConfirmedOrder(null);
+          }, 3000);
+        } else {
+          toast.success("Status updated successfully");
+        }
       } else {
         toast.error("Error updating status");
       }
@@ -49,8 +62,13 @@ const Orders = ({ url }) => {
     <div className='orders add'>
       <h3>Order Page</h3>
       <div className="order-list">
-        {orders.map((order, index) => (
-          <div key={index} className='order-item'>
+        {orders.length > 0 ? orders.map((order, index) => (
+          <div key={index} className={`order-item ${confirmedOrder === order._id ? 'order-confirmed' : ''} ${order.status === 'Delivered' ? 'delivered' : ''}`}>
+            {confirmedOrder === order._id && (
+              <div className="order-confirmed-badge">
+                <span>✓</span> Order Confirmed!
+              </div>
+            )}
             <img src={assets.parcel_icon} alt="" />
             <div>
               <p className='order-item-food'>
@@ -71,13 +89,13 @@ const Orders = ({ url }) => {
             </div>
             <p>Items: {order.items.length}</p>
             <p>${order.amount}</p>
-            <select onChange={(event) => statusHandler(event, order._id)} value={order.status}>
+            <select onChange={(event) => statusHandler(event, order._id)} value={order.status} className={order.status === 'Delivered' ? 'status-delivered' : ''}>
               <option value="Food Processing">Food Processing</option>
               <option value="Out for delivery">Out for delivery</option>
               <option value="Delivered">Delivered</option>
             </select>
           </div>
-        ))}
+        )) : <p className='no-orders'>No orders yet!</p>}
       </div>
     </div>
   )

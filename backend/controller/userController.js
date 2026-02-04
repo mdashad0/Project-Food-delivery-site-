@@ -2,7 +2,6 @@ import userModel from "../models/userModel.js";
 import jwt from "jsonwebtoken"
 import bcrypt from "bcrypt"
 import validator from "validator"
-import { response } from "express";
 
 // login user
 const loginUser = async(req ,res) =>{
@@ -17,15 +16,15 @@ const loginUser = async(req ,res) =>{
         const isMatch = await bcrypt.compare(password,user.password)
 
         if (!isMatch) {
-            return res.json({success:false,message:"Invalid Credenisal"})
+            return res.json({success:false,message:"Invalid Credentials"})
         }
 
         const token = createToken (user._id);
         res.json({success:true,token})
 
     } catch (error) {
-        console.log(Error);
-        res.json({success:false,message:"Error"})
+        console.log(error);
+        res.json({success:false,message:"Error logging in"})
         
     }
 

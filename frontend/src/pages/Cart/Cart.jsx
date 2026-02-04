@@ -34,7 +34,7 @@ const Cart = () => {
           </div>
           <br />
           <hr />
-          {food_list.map((item,index)=> {
+          {food_list && food_list.length > 0 ? food_list.map((item,index)=> {
               if(cartItems[item._id]>0)
               {
                 return(
@@ -51,7 +51,8 @@ const Cart = () => {
                   </div>
                 )
               }
-            })}
+              return null;
+            }) : <p>Your cart is empty</p>}
         </div>
         <div className="cart-bottom">
           <div className="cart-total">

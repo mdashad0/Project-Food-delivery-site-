@@ -4,7 +4,21 @@
     background: url('/header_img.png') no-repeat;
     background-size: contain;
     position: relative;
+    border-radius: 15px;
+    overflow: hidden;
 }
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0,0,0,0.3) 0%, transparent 50%);
+    pointer-events: none;
+}
+
 .header-contents{
     position: absolute;
     display: flex;
@@ -14,25 +28,53 @@
     max-width: 50%;
     bottom: 10%;
     left: 6vw;
-    animation: fadeIn 3s;
+    animation: slideInLeft 1s ease-out;
 }
 .header-contents h2{
     font-weight: 500;
     color: white;
     font-size:max(4.5vw,22px);
+    text-shadow: 0 2px 20px rgba(0,0,0,0.3);
 }
 .header-contents p{
     color: white;
     font-size: 1vw;
+    text-shadow: 0 1px 10px rgba(0,0,0,0.3);
 }
 .header-contents button{
     border: none;
     color: #747474;
     font-weight: 500;
     padding: 1vw 2.3vw;
-    background-color: white;
+    background: linear-gradient(135deg, #fff 0%, #f8f8f8 100%);
     font-size: max(1vw,13px);
     border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.header-contents button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+    transition: left 0.5s ease;
+}
+
+.header-contents button:hover::before {
+    left: 100%;
+}
+
+.header-contents button:hover {
+    background: linear-gradient(135deg, tomato 0%, #ff6b5b 100%);
+    color: white;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 99, 71, 0.4);
 }
 @media (max-width:1050px){
     .header-contents{

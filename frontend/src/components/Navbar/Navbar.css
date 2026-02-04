@@ -3,10 +3,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    animation: slideInLeft 0.5s ease-out;
 }
 
 .navbar .logo{
     width: 150px;
+    transition: all 0.3s ease;
+}
+
+.navbar .logo:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 8px rgba(255, 99, 71, 0.3));
 }
 
 .navbar-menu{
@@ -22,19 +29,49 @@
     gap: 40px;
 }
 
+.navbar-right img {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar-right img:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.2));
+}
+
 .navbar button{
-    background: transparent;
+    background: linear-gradient(135deg, #fff 0%, #fff5f3 100%);
     font-size: 16px;
     color: #49557e;
-    border: 1px solid tomato;
+    border: 2px solid tomato;
     padding: 10px 30px;
     border-radius: 50px;
     cursor: pointer;
-    transition:0.3s ;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 99, 71, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.navbar button:hover::before {
+    left: 100%;
 }
 
 .navbar button:hover{
-    background-color: #fff4f3;
+    background: linear-gradient(135deg, tomato 0%, #ff6b5b 100%);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 99, 71, 0.4);
 }
 
 .navbar .active{
@@ -43,6 +80,28 @@
 }
 .navbar li{
     cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar li::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, tomato, #ff6b5b);
+    transition: width 0.3s ease;
+}
+
+.navbar li:hover::after {
+    width: 100%;
+}
+
+.navbar li:hover {
+    color: tomato;
+    transform: translateY(-2px);
 }
 
 .navbar-search-icon{
@@ -56,6 +115,7 @@
     border-radius: 5px;
     top: -8px;
     right: -8px;
+    animation: pulse 1.5s infinite;
 }
 .navbar-profile{
     position: relative;

@@ -52,17 +52,17 @@ const List = ({url}) => {
           <b>Price</b>
           <b>Action</b>
         </div>
-        {list.map((item, index) => {
+        {list.length > 0 ? list.map((item, index) => {
           return (
             <div key={index} className='list-table-format'>
               <img src={`${url}/image/`+ item.image} alt="" />
               <p>{item.name}</p>
               <p>{item.category}</p>
               <p>${item.price}</p>
-              <p onClick={() => removeFood(item._id)} className='cursor'>x</p>
+              <p onClick={() => removeFood(item._id)} className='cursor remove-btn'>x</p>
             </div>
           )
-        })}
+        }) : <p className='no-items'>No food items found. Add some items!</p>}
       </div>
     </div>
   )

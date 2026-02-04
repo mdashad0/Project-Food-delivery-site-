@@ -22,6 +22,16 @@ const Add = ({url}) => {
 
     const onSubmitHandler = async (event) => {
         event.preventDefault();
+        
+        if (!image) {
+            toast.error("Please upload an image");
+            return;
+        }
+        if (!data.name || !data.description || !data.price) {
+            toast.error("Please fill all fields");
+            return;
+        }
+        
         const formData = new FormData();
         formData.append("name",data.name)
         formData.append("description", data.description)
@@ -29,22 +39,25 @@ const Add = ({url}) => {
         formData.append("category",data.category)
         formData.append("image",image)
 
-        const response= await axios.post(`${url}/api/food/add`,formData)
-        if(response.data.success){
-            setData({
-                name:"",
-                description:"",
-                price:"",
-                category:"Salad"
-            })
-            setImage(false)
-            toast.success(response.data.message)
+        try {
+            const response = await axios.post(`${url}/api/food/add`,formData)
+            if(response.data.success){
+                setData({
+                    name:"",
+                    description:"",
+                    price:"",
+                    category:"Salad"
+                })
+                setImage(false)
+                toast.success(response.data.message)
+            }
+            else{
+                toast.error(response.data.message)
+            }
+        } catch (error) {
+            toast.error("Error adding food item");
+            console.error(error);
         }
-        else{
-            toast.error(response.data.message)
-        }
-        // Add form submission logic here
-        // console.log(data);
     }
 
     return (

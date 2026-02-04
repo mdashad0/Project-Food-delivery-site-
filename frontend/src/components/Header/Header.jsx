@@ -7,11 +7,14 @@ const Header = () => {
         <div className="header-contents">
             <h2>Order Your Favourite Food Here</h2>
             <p>Choose from a diverse menu featuring a 
-                delectable array of dishes crafted with 
-                finest ingredient and culinaey experties. Our mission is to satisfy
-                your Craving and elevate your dining experience, one delicious meal at a time
+                delectable array of dishes crafted with the 
+                finest ingredients and culinary expertise. Our mission is to satisfy
+                your cravings and elevate your dining experience, one delicious meal at a time.
                 </p>
-            <button>View Menu</button>
+            <button onClick={() => {
+                const menu = document.getElementById('explore-menu');
+                if (menu) menu.scrollIntoView({ behavior: 'smooth' });
+            }}>View Menu</button>
         </div>
     </div>
   )

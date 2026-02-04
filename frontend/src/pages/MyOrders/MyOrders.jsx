@@ -10,12 +10,17 @@ const MyOrders = () => {
     const[data,setData] = useState([]);
 
     const fetchOrders = async () => {
-        const response = await axios.post(url+"/api/order/userorders",{},{headers:{token}});
-        // Filter out orders with no items or invalid data
-        const validOrders = response.data.data.filter(order => 
-            order && order.items && order.items.length > 0 && order.status
-        );
-        setData(validOrders);
+        try {
+            const response = await axios.post(url+"/api/order/userorders",{},{headers:{token}});
+            // Filter out orders with no items or invalid data
+            const validOrders = response.data.data.filter(order => 
+                order && order.items && order.items.length > 0 && order.status
+            );
+            setData(validOrders);
+        } catch (error) {
+            console.error("Error fetching orders:", error);
+            setData([]);
+        }
     }
 
     useEffect(()=>{

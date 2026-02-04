@@ -1,6 +1,23 @@
 .my-orders{
     margin: 50px 0px;
+    animation: fadeIn 0.6s ease-out;
 }
+
+.my-orders h2 {
+    position: relative;
+}
+
+.my-orders h2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, tomato, #ff6b5b);
+    border-radius: 2px;
+}
+
 .my-orders .container{
     display: flex;
     flex-direction: column;
@@ -14,15 +31,50 @@
     align-items: center;
     gap: 30px;
     font-size: 14px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     color: #454545;
-    border: 1px solid tomato;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #fff 0%, #fafafa 100%);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
 }
+
+.my-orders-order::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, tomato, #ff6b5b);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.my-orders-order:hover::before {
+    opacity: 1;
+}
+
+.my-orders-order:hover {
+    transform: translateY(-5px) scale(1.01);
+    border-color: #ffccc7;
+    box-shadow: 0 15px 40px rgba(255, 99, 71, 0.15);
+}
+
 .my-orders-order img{
     width: 50px;
+    transition: all 0.3s ease;
 }
+
+.my-orders-order:hover img {
+    transform: scale(1.1) rotate(5deg);
+}
+
 .my-orders-order p span{
     color: tomato;
+    animation: pulse 2s infinite;
 }
 .my-orders-order p b{
     font-weight: 500;
@@ -31,10 +83,19 @@
 .my-orders-order button{
     border: none;
     padding: 12px 0px;
-    border-radius: 4px;
-    background-color: #ffe1e1;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ffe1e1 0%, #ffccc7 100%);
     cursor: pointer;
     color: #454545;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.my-orders-order button:hover {
+    background: linear-gradient(135deg, tomato 0%, #ff6b5b 100%);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 99, 71, 0.3);
 }
 
 @media (max-width:900px) {

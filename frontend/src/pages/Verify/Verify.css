@@ -9,10 +9,62 @@
     border: 5px solid #bdbdbd;
     border-top-color: tomato;
     border-radius: 50%;
-    animation: rotates 1s infinite;
+    animation: rotate 1s infinite linear;
 }
 @keyframes rotate{
     100%{
         transform:rotate(360deg);
+    }
+}
+
+/* Order Confirmed Styles */
+.order-confirmed {
+    place-self: center;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.order-confirmed .checkmark {
+    width: 80px;
+    height: 80px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 40px;
+    color: white;
+    animation: scaleIn 0.5s ease-in-out;
+}
+
+.order-confirmed h2 {
+    color: #4CAF50;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.order-confirmed p {
+    color: #666;
+    font-size: 16px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
     }
 }

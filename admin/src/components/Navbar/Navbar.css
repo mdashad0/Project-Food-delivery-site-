@@ -3,10 +3,28 @@
     justify-content: space-between;
     align-items: center;
     padding: 8px 4%;
+    background: linear-gradient(135deg, #fff 0%, #fafafa 100%);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    animation: slideInLeft 0.4s ease-out;
 }
 .navbar .logo{
     width: max(10%, 80px);
+    transition: all 0.3s ease;
 }
+
+.navbar .logo:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 8px rgba(255, 99, 71, 0.3));
+}
+
 .navbar .profile{
     width: 40px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar .profile:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
